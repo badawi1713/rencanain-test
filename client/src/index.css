@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+a { text-decoration: none; color: #000000}
+a:active { text-decoration: none; color: #000000}
+a:hover { text-decoration: none; color: #000000}
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    
+}
+
+.main {
+    padding: 20px 80px;
+}
+
+.header {
+    padding: 10px 20px;
+}
+
+.main-navbar {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.03);
+}
+
