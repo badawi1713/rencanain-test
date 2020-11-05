@@ -35,4 +35,13 @@ const admin = (req, res, next) => {
   }
 };
 
-export { protect, admin };
+const vendorOwner = (req, res, next) => {
+  if (req.user && req.user.isVendorOwner) {
+    next();
+  } else {
+    res.status(401);
+    throw new Error("Not authorized as a vendor owner");
+  }
+};
+
+export { protect, admin, vendorOwner };
